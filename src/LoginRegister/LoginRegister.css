@@ -12,7 +12,7 @@
 }
 .wrapper1 {
   position: absolute; /* Absolute positioning for centering within a parent container */
-  top: 55%; /* Center vertically */
+  top: 60%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Offset for perfect centering */
   width: 420px;
