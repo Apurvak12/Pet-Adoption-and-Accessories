@@ -52,8 +52,8 @@ const Menu = () => {
           <li>               
       <NavLink className={({ isActive }) => {
 		return isActive ? 'active_class' : '';
-		}}to="/service" >
-        Services
+		}}to="/Accessories" >
+        Accessories
           </NavLink>
         </li>
       
