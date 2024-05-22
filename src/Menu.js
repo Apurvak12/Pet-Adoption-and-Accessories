@@ -61,12 +61,20 @@ const Menu = () => {
       <NavLink className={({ isActive }) => {
 		return isActive ? 'active_class' : '';
                             }} to="/contact" >
-        <button className="Button">Contact Us</button>
+        Contact Us
+        </NavLink>
+            </li> 
+              <li>
+      <NavLink className={({ isActive }) => {
+		return isActive ? 'active_class' : '';
+                            }} to="/loginregister" >
+        <button className="Button">Login/Register</button>
         </NavLink>
             </li> 
                 </ul>
          )}
-         <button onClick={toggleNav} className="ham"><MenuIcon/></button>  
+         <button onClick={toggleNav} className="ham"><MenuIcon/></button>
+         
        </div>
     </div>
         </section>
