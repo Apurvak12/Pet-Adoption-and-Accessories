@@ -64,9 +64,17 @@ const Menu = () => {
         <button className="Button">Contact Us</button>
         </NavLink>
             </li> 
+              <li>
+      <NavLink className={({ isActive }) => {
+		return isActive ? 'active_class' : '';
+                            }} to="/loginregister" >
+        <button className="Button">Login/Register</button>
+        </NavLink>
+            </li> 
                 </ul>
          )}
-         <button onClick={toggleNav} className="ham"><MenuIcon/></button>  
+         <button onClick={toggleNav} className="ham"><MenuIcon/></button>
+         
        </div>
     </div>
         </section>

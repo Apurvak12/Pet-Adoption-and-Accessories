@@ -1,0 +1,138 @@
+.container{
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Images/petadoption4.jpg ');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1; 
+}
+.wrapper1 {
+  position: absolute; /* Absolute positioning for centering within a parent container */
+  top: 55%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset for perfect centering */
+  width: 420px;
+  height: 450px;
+  background: radial-gradient(circle at 5.3% 17.2%, rgb(255, 208, 253) 0%, rgb(255, 237, 216) 90%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+/* Active state */
+.wrapper1.active {
+  height: 520px;
+}
+
+/* Form Box */
+.wrapper1 .form-box {
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  transition: transform 0.18s ease;
+}
+
+/* Login Form */
+.wrapper1 .form-box.login {
+  transform: translateX(0);
+}
+
+.wrapper1.active .form-box.login {
+  transform: translateX(-100%);
+}
+
+/* Register Form */
+.wrapper1 .form-box.register {
+  transform: translateX(100%);
+}
+
+.wrapper1.active .form-box.register {
+  transform: translateX(0);
+}
+
+/* Form Heading */
+form h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Input Box */
+form .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+
+/* Input Icon */
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Remember and Forgot */
+form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: white;
+  margin-right: 4px;
+}
+
+/* Text White */
+.text-white {
+  color: antiquewhite;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  height: 45px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Register Link */
+form .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a {
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}

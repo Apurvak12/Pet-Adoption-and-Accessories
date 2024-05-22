@@ -4,6 +4,7 @@ import Contact from './Contact/Contact';
 import Menu from "./Menu";
 import Service from "./Service/Service";
 import PetShop from "./PetShop/PetShop";
+import LoginRegister from "./LoginRegister/LoginRegister";
 import "./App.css"
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/service" element={<Service name="Service" />} />
             <Route path="/pet-shop" element={<PetShop name="pet-shop" />} />
             <Route path="/contact" element={<Contact name="Contact" />} />
+            <Route path="/loginregister" element={<LoginRegister name="LoginRegister" />}/>
           </Routes>
         </BrowserRouter>
       </div>
