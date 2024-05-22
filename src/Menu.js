@@ -61,7 +61,7 @@ const Menu = () => {
       <NavLink className={({ isActive }) => {
 		return isActive ? 'active_class' : '';
                             }} to="/contact" >
-        <button className="Button">Contact Us</button>
+        Contact Us
         </NavLink>
             </li> 
               <li>
