@@ -18,7 +18,7 @@ function App() {
             <Route path="/Accessories" element={<Service name="Accessories" />} />
             <Route path="/pet-shop" element={<PetShop name="pet-shop" />} />
             <Route path="/contact" element={<Contact name="Contact" />} />
-            <Route path="/loginregister" element={<LoginRegister name="LoginRegister" />}/>
+            <Route path="/loginregister" element={<LoginRegister name="LoginRegister" />} /> 
           </Routes>
         </BrowserRouter>
       </div>

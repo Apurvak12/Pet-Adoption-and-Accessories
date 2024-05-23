@@ -29,7 +29,7 @@ const Menu = () => {
     return (
     <section className="h-wrapper">
         <div className="h-container flexCenter paddings innerWidth">
-                <img className="doggo" src="./doggo.jpg" alt="logo img" width={100}></img>
+                <img className="logo" src="./logo.png" alt="logo img" width={380} height={320}></img>
     
                 
         <div className=" flexCenter h-menu">
@@ -67,8 +67,8 @@ const Menu = () => {
               <li>
       <NavLink className={({ isActive }) => {
 		return isActive ? 'active_class' : '';
-                            }} to="/loginregister" >
-        <button className="Button">Login/Register</button>
+                            }} to="/loginRegister" >
+        <button className="Button">Login</button>
         </NavLink>
             </li> 
                 </ul>

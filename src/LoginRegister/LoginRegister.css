@@ -1,4 +1,3 @@
-/* Full viewport background image specific to login/register */
 .login-register-container {
   position: fixed;
   top: 0;
@@ -14,13 +13,13 @@
 
 .wrapper1 {
   position: absolute; /* Absolute positioning for centering within a parent container */
-  top: 50%; /* Center vertically */
+  top: 55%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Offset for perfect centering */
   width: 420px;
   height: 450px;
   background: radial-gradient(circle at 5.3% 17.2%, rgb(255, 208, 253) 0%, rgb(255, 237, 216) 90%);
-  border-radius: 10px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -71,6 +70,8 @@ form .input-box {
   width: 100%;
   height: 50px;
   margin: 30px 0;
+
+  
 }
 
 .input-box input {
@@ -138,4 +139,35 @@ form .register-link {
 .register-link p a:hover {
   text-decoration: underline;
 }
+/* Adjustments for mobile view */
+@media (max-width: 480px) {
+  .wrapper1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 90%;
+    max-width: 320px; /* Adjust width for smaller screens */
+    margin: 80px auto; /* Center horizontally and add some top margin */
+    overflow-y: auto;
+    padding: 0px;
+    background: transparent;
+  }
 
+  form h1 {
+    font-size: 24px;
+  }
+
+  .input-box {
+    margin: 15px 0;
+  }
+
+  form button {
+    height: 40px;
+  }
+}
+/* @media (max-width: 768px) {
+  .wrapper1 {
+  margin-top: 50px;
+  }
+} */

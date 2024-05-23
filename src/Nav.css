@@ -8,6 +8,8 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: rgba(255, 255, 255, 0.78);
+    padding-left: -10rem;
+    display: flex;
 }
 .h-menu{
     gap:2rem;
