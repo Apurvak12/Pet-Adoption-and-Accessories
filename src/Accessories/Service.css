@@ -314,8 +314,8 @@ body {
   #HERO
 \*-----------------------------------*/
 
-.hero {
-  /* margin-block-start: 85px;
+/* .hero {
+  margin-block-start: 85px;
   min-height: 360px;
   background-position: left;
   text-align: left;
@@ -325,8 +325,8 @@ body {
   padding-right: 0px;
   box-sizing: border-box;
   width: 100%;
-  height: 100%; */
-}
+  height: 100%;
+} */
 
 .bangers-regular {
   font-family: "Bangers", system-ui;
