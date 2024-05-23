@@ -1,5 +1,4 @@
 import React from 'react';
-import { BiCartCheckFill } from 'react-icons/bi';
 import hero from '../assets/hero-banner.jpg';
 import category from '../assets/category-1.jpg';
 import category2 from '../assets/category-2.jpg';
