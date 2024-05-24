@@ -33,15 +33,14 @@ function PetCard(props) {
                     <br />
                     <span className="Dog_info">Life Span: {props.life}</span>
                     
-                    <button onClick={toggleModal} className="btn-modal">Click to adopt me! </button>
+                    <button onClick={toggleModal} className="btn-modal"><bold>Add To Cart!</bold> </button>
                     
                     
                     </div>
             </div>
         </div>
         
-    )
-;
+    );
 
 }
 export default PetCard;
