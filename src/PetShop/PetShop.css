@@ -81,10 +81,13 @@
   border-radius: 12px;
   box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1);
   float: left;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .card:hover {
   box-shadow: 10px 30px 18px -8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
 }
 
 .card_img {
@@ -133,6 +136,7 @@
   transition: all 300ms ease-in;
   cursor: pointer;
   color: rgb(54, 8, 8);
+  
 }
 
 @media (max-width: 768px) {
