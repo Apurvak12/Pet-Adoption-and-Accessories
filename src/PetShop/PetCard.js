@@ -5,8 +5,10 @@ function PetCard(props) {
     const [modal, setModal] = useState(false);
 
     const toggleModal = () => {
+        
         setModal(!modal);
         document.body.classList.toggle("active-modal", !modal);
+        
     };
 
     return (
@@ -18,11 +20,11 @@ function PetCard(props) {
                 <span className="Dog_info">Breed: {props.breed}</span>
                 <br />
                 <span className="Dog_info">Life Span: {props.life}</span>
-                <button onClick={toggleModal} className="btn-modal">
+                <button onClick={()=>toggleModal()} className="btn-modal">
                     <strong>Click To Adopt Me!</strong>
                 </button>
             </div>
-
+{modal}
             {modal && (
                 <div className="modal">
                     <div className="overlay" onClick={toggleModal}></div>
