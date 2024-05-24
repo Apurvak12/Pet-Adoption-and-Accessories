@@ -29,7 +29,7 @@ const Menu = () => {
     return (
     <section className="h-wrapper">
         <div className="h-container flexCenter paddings innerWidth">
-                <img className="logo" src="./logo.png" alt="logo img" width={380} height={320}></img>
+                <img className="logo" src="./logo.png" alt="logo img" width={240} height={150}></img>
     
                 
         <div className=" flexCenter h-menu">

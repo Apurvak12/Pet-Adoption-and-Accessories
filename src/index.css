@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  font-size: 2rem;
 }
 a {
   color: inherit;
@@ -59,7 +60,7 @@ a {
 .primaryText {
   color: #1f3e72;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .secondaryText {
