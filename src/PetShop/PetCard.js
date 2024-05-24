@@ -19,7 +19,7 @@ function PetCard(props) {
                         <br />
                         For further interaction and adoption procedure:<br/>
                         </p>
-                           <button className="book-modal">Book a session.</button> 
+                           <button className="book-modal">Add To Cart!</button> 
                             <button className="close-modal" onClick={toggleModal}>Close</button>
                         </div>
                         
@@ -33,7 +33,7 @@ function PetCard(props) {
                     <br />
                     <span className="Dog_info">Life Span: {props.life}</span>
                     
-                    <button onClick={toggleModal} className="btn-modal"><bold>Add To Cart!</bold> </button>
+                    <button onClick={toggleModal} className="btn-modal"><bold>Click To Adopt Me!</bold> </button>
                     
                     
                     </div>
