@@ -49,7 +49,8 @@ input{
 } 
 
 .stats{
-    padding-top:7rem;
+    background-color: azure;
+    padding:5rem;
     display: flex;
     justify-content:center;
     flex-wrap:wrap;
@@ -57,16 +58,16 @@ input{
 }
 .stat{
     background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-    padding:3rem 6rem;
+    padding:2rem 6rem;
     border-radius: 5%;
-    padding: auto;
+
 }
 .stat>span{
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .stat>p{
-    font-size:2rem;
+    font-size:1rem;
     font-weight: 500;
 }
 @media (max-width: 500px){
