@@ -1,14 +1,14 @@
 .h-wrapper {
     background: #2d2a30;
     color: white;
+    position: relative;
 }
 
 .h-container {
-    justify-content: space-between;
-    padding: 1rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 1rem;
 }
 
 .h-menu {
@@ -32,7 +32,7 @@
     border: none;
     color: white;
     position: absolute;
-    top: 30px; /* Adjust top position */
+    top: 20px;
     right: 10px;
 }
 
@@ -43,12 +43,17 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .nav-list li {
     margin-right: 20px;
     color: #f1f1f1;
     cursor: pointer;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
 }
 
 /* Media Queries for Responsive Design */
@@ -70,12 +75,17 @@
         margin-left: 20px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .h-menu {
-        display: flex;
+        display: none; /* Initially hide the menu on smaller screens */
         flex-direction: column;
         width: 100%;
         background: #2d2a30;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
     }
 
     .h-menu.active {
@@ -84,32 +94,39 @@
 
     .ham {
         display: block;
-
     }
 
-  .nav-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column; /* Ensure vertical stacking */
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
-.nav-list li {
-    margin-right: 0; /* Remove margin to ensure full width */
-    color: #f1f1f1;
-    cursor: pointer;
-    width: 100%; /* Ensure full width */
-    padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.555);
-    text-align: center;
-    align-items: end;
-}
-
+    .nav-list li {
+        margin: 0;
+        color: #f1f1f1;
+        cursor: pointer;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+    }
 
     .nav-list li:nth-child(1) {
         border-top: none;
+    }
+
+    .nav-list li:last-child {
+        margin-top: 20px;
+    }
+
+    .nav-list li:last-child .Button {
+        width: 80%;
+        margin: 0 auto;
     }
 }

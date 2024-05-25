@@ -105,8 +105,15 @@ background-image: url("../ImageHero//imagehero1.jpg");
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
-
+.footer1 hr {
+    width: 100%; /* Adjust width as needed */
+    margin: 20px auto; /* Adjust margin as needed */
+    border: none;
+    height: 1px;
+    background-color: #FFFFFF; /* Adjust color as needed */
+}
 .footer-div{
     
     width:90%;
@@ -137,38 +144,27 @@ background-image: url("../ImageHero//imagehero1.jpg");
    color:#FFE5C3;
    padding:1.9rem;
 }
-.footer2 {
-    width: 100%;
-    background-color: #FFE5C3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top:35%; /* Add some padding for spacing */
-     /* Adjust positioning */
-    /* bottom: 0; Stick to the bottom */
-    /* backdrop-filter: blur(10px); Apply the blur effect for a glassy look */
-    /* -webkit-backdrop-filter: blur(10px);  */
-}
 
 
+.footer-text {
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  margin: 0.5rem; /* Adjust margin for spacing */
+  color: #FFE5C3;
+}
 
-.footer-text{
-   font-size: 0.8rem;
-   color: rgb(0, 0, 0);
-   margin: 2rem;
+.icon-section {
+  display: flex;
 }
-.icon-section{
-    display: flex;
-    
-}
+
 .icon-section a {
-    margin: 0.5rem;
-    
+  margin: 0 0.5rem; /* Adjust horizontal margin */
 }
-.icon-section a:hover{
-    color:rgb(228, 26, 60);
+
+.icon-section a:hover {
+  color: rgb(228, 26, 60);
 }
+
 @media (max-width: 716px) {
 
     .main input {
@@ -178,4 +174,6 @@ background-image: url("../ImageHero//imagehero1.jpg");
 .form{
     padding-top: 140px;
 }
+
+
  
