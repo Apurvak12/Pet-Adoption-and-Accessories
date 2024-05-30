@@ -17,8 +17,8 @@ footer {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    padding: 50px 50px 60px 50px;
-    margin-top: 80px;
+    padding: 50px 50px 30px 50px;
+    margin-top: 60px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -142,15 +142,16 @@ footer {
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
-}
-
-.footer-distributed .footer-icons a:hover {
+  }
+  
+  .footer-distributed .footer-icons a:hover {
     color: rgb(211, 137, 149);
-}
-
-.footer-links a:hover {
+  }
+  
+  .footer-links a:hover {
     color: rgb(211, 137, 149);
-}
+  }
+  
 
 @media (max-width: 880px) {
     .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {

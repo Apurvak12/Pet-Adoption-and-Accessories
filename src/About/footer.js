@@ -19,11 +19,11 @@ const Footer = () => {
                 </div>
                 <div className="footer-center">
                     <div>
-                        <i className="fa fa-map-marker"></i>
+                    <i class="fa-solid fa-map-pin"></i>
                         <p><span>Nagpur</span> Maharashtra</p>
                     </div>
                     <div>
-                        <i className="fa fa-phone"></i>
+                    <i class="fa-solid fa-phone-volume"></i>
                         <p>+91 9********0</p>
                     </div>
                     <div>
@@ -38,11 +38,11 @@ const Footer = () => {
                         <strong>adoptadoggo</strong> 
                     </p>
                     <div className="footer-icons">
-                        <a href="#"><i className="fa fa-facebook"></i></a>
-                        <a href="#"><i className="fa fa-instagram"></i></a>
-                        <a href="#"><i className="fa fa-linkedin"></i></a>
-                        <a href="#"><i className="fa fa-twitter"></i></a>
-                        <a href="#"><i className="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
             </footer>
