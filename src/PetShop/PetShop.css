@@ -1,152 +1,173 @@
+.Shop{
+  background-color: #ffffff;
+  margin: 60px;
+}
+.Shop h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #3a3a37;
+}
 .Shop {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(251, 222, 238) 15.6%,
-    rgb(206, 201, 226) 80.3%
-  );
-  margin: 3rem 0;
-  padding: 2rem; /* Add padding for better spacing */
-}
-
-/* Heading styling */
-.PetShop-heading {
   text-align: center;
-  animation: animate 1.5s linear infinite;
-  margin-bottom: 20px; /* Add spacing between heading and buttons */
+font-weight: 100;
 }
-
+.PetShop-heading {
+  animation: animate 1.5s linear ;
+}
 @keyframes animate {
   0% {
-    opacity: 0;
+    opacity: 0.5;
   }
 
-  50% {
-    opacity: 0.9;
-  }
 
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
-
-/* Filters section styling */
-.filters {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.started{
+  margin: 30px;
 }
-
-.filters button {
-  background-color: #f0f0f0; /* Light background for non-active buttons */
-  border: none; /* Remove borders */
-  color: #333; /* Dark text */
-  padding: 10px 20px; /* Some padding */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline */
-  display: flex; /* Use flex to align icon and text */
-  align-items: center; /* Center items vertically */
-  font-size: 18px; /* Increase font size */
-  font-weight: bold;
-  margin: 4px 10px; /* Add some margin */
-  cursor: pointer; /* Pointer/hand icon */
-  border-radius: 20px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Add transition for hover and active effect */
+.started p{
+margin-bottom: 40px;
+  font-size: 40px;
+  color: #55564dc8;
+  font-weight: 500;
 }
-
-.filters button i {
-  margin-right: 8px; /* Space between icon and text */
+.started ul li{
+  font-size: 20px;
+  margin: 10px;
+  line-height: 2;
+  text-align: justify;
+  color: #3a3a37;
 }
-
-.filters button:hover {
-  background: linear-gradient(120deg, #2578fd, ); /* Gradient on hover */
-  color: white; /* White text on hover */
-}
-
-.filters .active {
-  background: linear-gradient(120deg, #2578fd, #43c2fc); /* Gradient background for active button */
-  color: white; /* White text for active button */
-}
-
-/* Card styling */
 .cards {
-  width: 100%;
-  height: auto;
+  margin-left: 100px;
+ 
 }
-
 .card {
-  margin: 1.1% 1.1% 3.4%; /* Adjusted margin */
+  margin :25px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #d2bcbc;
-  width: calc(32% - 1%); /* Adjusted width */
-  border-radius: 12px;
+  width: 253px;
   box-shadow: 0 13px 10px -7px rgba(0, 0, 0, 0.1);
   float: left;
-  overflow: hidden;
-  transition: transform 0.3s;
+  background-color: #d1d1cb;
 }
-
 .card:hover {
   box-shadow: 10px 30px 18px -8px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
 }
-
 .card_img {
-  width: 100%;
-  height: 235px;
-  /* object-fit: cover; Changed from fill to cover */
-  border-radius: 12px; /* Adjusted border-radius */
+  width: 248px;
+  margin: 2px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: fill;
 }
-
 .card_info {
-  background-color: #d2bcbc;
-  border-radius: 12px; /* Adjusted border-radius */
-  padding: 8px; /* Decreased padding */
+  background-color: #b9ce9b;
+  border-bottom-left-radius: 12px;
+  padding: 16px 24px 24px 24px;
 }
-
 .Dog_name {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 13px;
   letter-spacing: 2px;
-  font-weight: 800;
-  color: rgb(93, 14, 14);
-  text-align: center;
+  font-weight: 500;
+  color: rgb(15, 93, 14);
+  background-color: #c3d34a;
 }
-
 .Dog_breed {
-  margin: 2px 0;
+  margin: 5px;
+  margin-bottom: 10px;
+  background-color: #d2bcbc;
   text-transform: capitalize;
 }
-
 .Dog_info {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 5px; /* Adjust margin-bottom to reduce spacing */
 }
-
 .btn-modal {
   width: 100%;
   margin: 1rem 0;
   padding: 0.6rem;
   font-weight: 600;
   font-size: 1rem;
-  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background: linear-gradient(120deg, #03060b 0%, #04080a 100%);
   border: none;
   border-radius: 4px;
   transition: all 300ms ease-in;
   cursor: pointer;
-  color: rgb(54, 8, 8);
-  
+  color: rgb(255, 255, 255);
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure the modal is above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  z-index: 1000; /* Ensure the overlay is on top */
 }
 
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: white; /* Set background color to white */
+  padding: 5rem;
+  border-radius: 3px;
+  z-index: 1001; /* Ensure the modal content is on top of the overlay */
+}
+
+
+.modal-content h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.close-modal,
+.book-modal {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-modal {
+  background-color: #fff8f8;
+  color: #ffffff;
+}
+
+.book-modal {
+  background-color: #007bff; /* Blue color for book button */
+  color: #fff;
+}
+
+.close-modal:hover,
+.book-modal:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
 @media (max-width: 768px) {
   .card {
     float: none;
-    margin: 5% auto 10% auto;
-    width: 90%;
+    margin:20px;
+    width:253px;
   }
 }
-
 body.active-modal {
   overflow-y: hidden;
 }
@@ -165,7 +186,6 @@ body.active-modal {
 .overlay {
   background: rgba(49, 49, 49, 0.8);
 }
-
 .modal-content {
   position: absolute;
   top: 50%;
@@ -179,16 +199,13 @@ body.active-modal {
   height: auto;
   background-color: hsl(34, 86%, 88%, 1);
 }
-
 .modal-content h2 {
   color: rgb(162, 52, 70);
   margin: 1.5rem;
 }
-
 .modal-content p {
   margin: 1.5rem;
 }
-
 .close-modal {
   position: absolute;
   top: 10px;
@@ -200,7 +217,6 @@ body.active-modal {
   border-radius: 4px;
   transition: all 300ms ease-in;
 }
-
 .book-modal {
   padding: 1rem 1.4rem;
   background: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
@@ -212,15 +228,12 @@ body.active-modal {
   width: 90%;
   margin: 1.5rem;
 }
-
 .close-modal:hover {
   transform: scale(1.05, 1.05);
 }
-
 .book-modal:hover {
   transform: scale(1.05, 1.05);
 }
-
 @media (max-width: 750px) {
   .modal-content {
     font-size: 0.8rem;
@@ -228,7 +241,6 @@ body.active-modal {
     padding: 2rem;
     width: fit-content;
   }
-
   .book-modal {
     width: auto;
   }
